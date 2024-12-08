@@ -14,7 +14,7 @@ class ProductCard extends StatelessWidget {
         children: [
           Image.network(product.image, height: 100, fit: BoxFit.cover),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -27,7 +27,7 @@ class ProductCard extends StatelessWidget {
                   '\$${product.price.toStringAsFixed(2)}',
                   style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 2),
                 Row(
                   children: [
                     const Icon(Icons.star, color: Colors.amber, size: 16),
